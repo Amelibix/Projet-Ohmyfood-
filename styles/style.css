@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 2px 5px 2px #b2b0b0;
+}
+header #logo {
+  display: flex;
+  width: auto;
+  height: 25px;
+}/*# sourceMappingURL=style.css.map */
