@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   height: 50px;
-  box-shadow: 0 5px 5px 0 rgb(148, 144, 144);
+  box-shadow: 0 5px 5px 0 #cdcdcd;
 }
 .logo #logo {
   display: flex;
