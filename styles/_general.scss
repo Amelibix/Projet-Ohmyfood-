@@ -1,4 +1,53 @@
-header {
-    @include header;
-    box-shadow: 0 2px 5px 2px #b2b0b0;
+.logo {
+    @include part_logo;
+    box-shadow: 0 5px 5px 0 rgb(148, 144, 144);
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: $tertiary;
+    inset: 0;
+    animation: disappear 200ms $animation forwards;
+
+    .loader {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: block;
+        margin: 15px auto;
+        position: relative;
+        background: #FFF;
+        box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+        box-sizing: border-box;
+        animation: shadowPulse $animation linear infinite;
+    }
+
+    @keyframes disappear {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes shadowPulse {
+        33% {
+            background: #FFF;
+            box-shadow: -24px 0 $primarycolor, 24px 0 #FFF;
+        }
+
+        66% {
+            background: $secondarycolor;
+            box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+        }
+
+        100% {
+            background: #FFF;
+            box-shadow: -24px 0 #FFF, 24px 0 $primarycolor;
+        }
+    }
 }
