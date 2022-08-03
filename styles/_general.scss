@@ -1,8 +1,9 @@
 .logo {
     @include part_logo;
-    box-shadow: 0 5px 5px 0 lighten($color-grey, 30%)
+    box-shadow: 0 5px 5px 5px lighten($color-grey, 40%);
 }
 
+/*
 .loading {
     display: flex;
     align-items: center;
@@ -49,5 +50,15 @@
             background: #FFF;
             box-shadow: -24px 0 #FFF, 24px 0 $primarycolor;
         }
+    }
+}
+*/
+.part_localisation {
+    @include centre;
+    background-color: lighten($color-grey, 40%);
+    color: lighten(black, 20%);
+
+    .fa-location-dot {
+        margin: 15px;
     }
 }

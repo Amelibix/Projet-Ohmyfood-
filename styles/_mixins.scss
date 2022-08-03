@@ -1,3 +1,11 @@
+ @mixin centre {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+
+ }
+
  @mixin part_logo {
      display: flex;
      justify-content: center;
