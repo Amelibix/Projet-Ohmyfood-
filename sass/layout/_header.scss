@@ -1,0 +1,7 @@
+header {
+    .logo {
+        @include part_logo;
+        box-shadow: 0 5px 5px 5px $color-grey;
+        background-color: white;
+    }
+}
