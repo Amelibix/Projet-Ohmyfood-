@@ -2,8 +2,15 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 100%;
+     text-align: center;
+ }
 
+ @mixin background-grey {
+     background-color: lighten($color-grey, 46%)
+ }
+
+ @mixin police-texte {
+     font-family: 'Roboto', cursive;
  }
 
  @mixin part_logo {
@@ -18,4 +25,18 @@
          width: auto;
          height: 25px;
      }
+ }
+
+ @mixin btn_commande {
+     text-align: center;
+     color: white;
+     background-color: $primarycolor;
+     margin-bottom: 40px;
+     width: 220px;
+     height: 45px;
+     cursor: pointer;
+     border-radius: 40px;
+     box-shadow: 0 5px 5px 0 lighten($color-grey, 30%);
+     background-image: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
+     border: lighten($color-grey, 46%);
  }
