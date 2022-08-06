@@ -39,4 +39,12 @@
      box-shadow: 0 5px 5px 0 lighten($color-grey, 30%);
      background-image: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
      border: lighten($color-grey, 46%);
+
+     &:hover {
+         @include zoom;
+     }
+ }
+
+ @mixin zoom {
+     transform: scale(1.02);
  }

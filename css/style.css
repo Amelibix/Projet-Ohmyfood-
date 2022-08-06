@@ -98,6 +98,63 @@ section p {
   margin: 0 0 30px 0;
 }
 
+section .container_fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  counter-reset: number;
+}
+section .container_fonctionnement ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 15px;
+}
+section .container_fonctionnement li {
+  background-color: whitesmoke;
+  flex-grow: 1;
+  padding: 20px 30px;
+  border-radius: 20px;
+  list-style-type: none;
+  position: relative;
+  box-shadow: 0 5px 5px 0 #e6e6e6;
+}
+section .container_fonctionnement li::before {
+  content: counter(number);
+  counter-increment: number;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #9356DC;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+}
+section .container_fonctionnement li:hover {
+  transform: scale(1.02);
+}
+section .container_fonctionnement li:hover:hover {
+  background-color: #f2eafb;
+}
+section .container_fonctionnement li:hover i {
+  color: #9356DC;
+}
+section a {
+  text-decoration: none;
+  color: black;
+}
+section i {
+  color: gray;
+  margin-right: 15px;
+}
+
 .btn_commande {
   text-align: center;
   color: white;
@@ -110,6 +167,9 @@ section p {
   box-shadow: 0 5px 5px 0 #cdcdcd;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: whitesmoke;
+}
+.btn_commande:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */
