@@ -89,15 +89,23 @@ section {
     .container_fonctionnement {
         display: flex;
         flex-direction: column;
-        align-items: center;
+
         background-color: white;
+        padding: 15px;
         counter-reset: number;
+
+
 
         & ol {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
-            margin: 15px;
+            padding-left: 15px;
+
+            @media (max-width :880px) {
+                flex-direction: column;
+            }
+
         }
 
         & li {
