@@ -160,6 +160,61 @@ section i {
   margin-right: 15px;
 }
 
+section .container_restaurants {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+section .container_restaurants h2 {
+  margin-left: 10px;
+}
+section .container_restaurants .cards_menus {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 5px 5px 0 #e6e6e6;
+  position: relative;
+}
+section .container_restaurants .cards_menus img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+section .container_restaurants .cards_menus p {
+  margin: 0 0 5px 10px;
+}
+section .container_restaurants .cards_menus h3 {
+  margin: 15px 0 5px 10px;
+}
+section .container_restaurants .cards_menus .new {
+  position: relative;
+}
+section .container_restaurants .cards_menus .new::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  content: "Nouveau";
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  height: 30px;
+  width: 90px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 3px;
+}
+
 .btn_commande {
   text-align: center;
   color: white;
@@ -175,6 +230,35 @@ section i {
 }
 .btn_commande:hover {
   transform: scale(1.02);
+  background-image: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 0 5px 5px 0 #9a9a9a;
+}
+
+.cards_menus .heart .fa-solid {
+  display: none;
+}
+.cards_menus .heart .fa-regular {
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  right: 16px;
+  top: 80%;
+  color: black;
+}
+.cards_menus .heart:hover .fa-regular {
+  color: transparent;
+}
+.cards_menus .heart:hover .fa-solid {
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  right: 16px;
+  top: 80%;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

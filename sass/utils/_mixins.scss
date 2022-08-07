@@ -42,9 +42,47 @@
 
      &:hover {
          @include zoom;
+         background-image: linear-gradient(to bottom right, lighten($secondarycolor, 5%), lighten($primarycolor, 5%));
+         box-shadow: 0 5px 5px 0 lighten($color-grey, 10%);
      }
  }
 
  @mixin zoom {
      transform: scale(1.02);
+ }
+
+ @mixin heart {
+     .heart {
+         .fa-solid {
+             display: none;
+         }
+
+         .fa-regular {
+             display: flex;
+             font-size: 30px;
+             position: absolute;
+             right: 16px;
+             top: 80%;
+             color: black;
+         }
+
+         &:hover {
+             .fa-regular {
+                 color: transparent;
+             }
+
+             .fa-solid {
+                 display: flex;
+                 font-size: 30px;
+                 position: absolute;
+                 right: 16px;
+                 top: 80%;
+                 background: linear-gradient($primarycolor, $secondarycolor);
+                 background-clip: border-box;
+                 -webkit-background-clip: text;
+                 -webkit-text-fill-color: transparent;
+                 cursor: pointer;
+             }
+         }
+     }
  }
