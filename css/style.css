@@ -17,8 +17,11 @@ footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
+}
+footer .cards_footer {
+  display: flex;
+  flex-direction: column;
 }
 footer a {
   text-decoration: none;
@@ -37,7 +40,13 @@ footer i {
   font-size: 15px;
 }
 footer .fa-utensils {
-  margin-right: 18px;
+  margin-right: 16px;
+}
+@media (min-width: 960px) {
+  footer .cards_footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 /*.loading {
@@ -292,9 +301,6 @@ section .container_restaurants .cards_menus h3 {
   margin: 15px 0 5px 10px;
 }
 @media (min-width: 960px) {
-  section .container_restaurants {
-    display: flex;
-  }
   section .container_restaurants .cards_restaurants {
     display: flex;
     width: 100%;
