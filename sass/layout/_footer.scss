@@ -1,0 +1,33 @@
+footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 5px
+    }
+
+    h2 {
+        @include police-titre;
+        font-size: 20px;
+        color: white;
+        margin: 5px 0 20px 5px;
+    }
+
+    i {
+        display: flex;
+        margin-right: 10px;
+        font-size: 15px;
+
+    }
+
+    .fa-utensils {
+        margin-right: 18px;
+    }
+
+}

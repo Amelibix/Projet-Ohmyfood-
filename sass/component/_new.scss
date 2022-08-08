@@ -1,0 +1,22 @@
+@mixin new {
+
+    .new {
+        position: relative;
+    }
+
+    .new::before {
+
+        @include centre;
+        content: "Nouveau";
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: $tertiarycolor;
+        color: darken($tertiarycolor, 40%);
+        border-radius: 3px;
+    }
+}

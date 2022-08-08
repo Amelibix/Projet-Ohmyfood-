@@ -53,9 +53,17 @@ main {
         color: lighten(black, 20%);
         font-weight: bolder;
         font-size: 13px;
+        padding: 10px;
 
         .fa-location-dot {
             margin-right: 10px;
+            font-size: 15px;
+        }
+
+        #searchbar {
+            border: lighten($color-grey, 40%);
+            background-color: lighten($color-grey, 40%);
+            color: lighten(black, 20%);
             font-size: 15px;
         }
     }
@@ -70,6 +78,7 @@ section {
     .container_reservez {
         @include centre;
         @include background-grey;
+        @include btn_commande;
         flex-direction: column;
         height: 270px;
         padding-left: 20px;
@@ -99,10 +108,9 @@ section {
             gap: 1rem;
             padding-left: 15px;
 
-            @media (max-width :880px) {
+            @media (max-width :960px) {
                 flex-direction: column;
             }
-
         }
 
         & li {
@@ -112,6 +120,7 @@ section {
             border-radius: 20px;
             list-style-type: none;
             position: relative;
+            margin: 10px;
             box-shadow: 0 5px 5px 0 lighten($color-grey, 40%);
 
             &::before {
@@ -158,24 +167,25 @@ section {
     .container_restaurants {
         display: flex;
         flex-direction: column;
-        width: 100%;
         @include background-grey;
-        padding: 10px;
+        padding: 10px 10px 50px;
 
         h2 {
             margin-left: 10px;
         }
 
         .cards_menus {
+
             display: flex;
             flex-direction: column;
             background-color: white;
-            width: 90%;
             height: 280px;
             border-radius: 20px;
             margin: 10px;
             box-shadow: 0 5px 5px 0 lighten($color-grey, 40%);
             position: relative;
+            @include heart;
+            @include new;
 
             & img {
                 display: flex;
@@ -193,24 +203,19 @@ section {
                 margin: 15px 0 5px 10px;
             }
 
-            .new {
-                position: relative;
+        }
+
+        @media (min-width :960px) {
+            display: flex;
+
+
+            .cards_restaurants {
+                display: flex;
+                width: 100%;
             }
 
-            .new::before {
-
-                @include centre;
-                content: "Nouveau";
-                position: absolute;
-                right: 16px;
-                top: 16px;
-                height: 30px;
-                width: 90px;
-                font-size: 15px;
-                font-weight: 500;
-                background-color: $tertiarycolor;
-                color: darken($tertiarycolor, 40%);
-                border-radius: 3px;
+            .cards_menus {
+                width: 90%;
             }
         }
     }

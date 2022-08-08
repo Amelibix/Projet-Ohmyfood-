@@ -1,6 +1,9 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './layout/header';
-@import'./page/home';
+@import'./layout/footer';
+
 @import'./component/buttons';
 @import'./component/heart';
+@import'./component/new';
+@import'./page/home';
