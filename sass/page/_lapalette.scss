@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    background-color: white;
+
+    .logo {
+        @include part_logo;
+        box-shadow: none;
+    }
+
+    .arrow {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+main {
+    .container_image {
+        display: flex;
+        flex-direction: column;
+        @include image;
+
+
+        .texte {
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: -30px;
+            @include background-grey;
+            border-radius: 30px 30px 0 0;
+            @include heart;
+
+            h1 {
+                @include police-titre;
+                margin: 15px 0 10px 0;
+            }
+        }
+    }
+}
+
+section {
+    .container_plats {
+        display: flex;
+        flex-direction: column;
+        @include background-grey;
+        padding: 0 20px;
+
+        h2 {
+            display: flex;
+            margin: 10px 0;
+            padding: 5px 0;
+            width: 40px;
+            font-size: 20px;
+            font-weight: 300;
+            border-bottom: 3px solid $tertiarycolor;
+
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 5px 5px 0 lighten($color-grey, 40%);
+            padding: 10px;
+
+            h3,
+            p {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px;
+            }
+
+            span {
+                display: flex;
+                font-weight: 500;
+            }
+
+
+        }
+    }
+}
+
+section {
+    .btn {
+        @include centre;
+        @include btn_commande;
+        @include background-grey;
+        padding: 40px 20px 20px 20px;
+    }
+}

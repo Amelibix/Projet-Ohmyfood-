@@ -53,7 +53,7 @@ footer .fa-utensils {
     display: flex;
     align-items: center;
     position: fixed;
-    background-color: $tertiary;
+    background-color: $tertiarycolor;
     inset: 0;
     animation: disappear 200ms $animation forwards;
 
@@ -241,26 +241,26 @@ section .container_restaurants .cards_menus {
   box-shadow: 0 5px 5px 0 #e6e6e6;
   position: relative;
 }
+section .container_restaurants .cards_menus .heart {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 85%;
+}
 section .container_restaurants .cards_menus .heart .fa-solid {
   display: none;
 }
 section .container_restaurants .cards_menus .heart .fa-regular {
   display: flex;
   font-size: 30px;
-  position: absolute;
-  right: 16px;
-  top: 80%;
   color: black;
 }
 section .container_restaurants .cards_menus .heart:hover .fa-regular {
-  color: transparent;
+  display: none;
 }
 section .container_restaurants .cards_menus .heart:hover .fa-solid {
   display: flex;
   font-size: 30px;
-  position: absolute;
-  right: 16px;
-  top: 80%;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -308,6 +308,135 @@ section .container_restaurants .cards_menus h3 {
   section .container_restaurants .cards_menus {
     width: 90%;
   }
+}
+
+header {
+  display: flex;
+  background-color: white;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  box-shadow: none;
+}
+header .logo #logo {
+  display: flex;
+  width: auto;
+  height: 25px;
+}
+header .arrow {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+main .container_image {
+  display: flex;
+  flex-direction: column;
+}
+main .container_image img {
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+  height: 300px;
+}
+main .container_image .texte {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: -30px;
+  background-color: whitesmoke;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+}
+main .container_image .texte .fa-solid {
+  display: none;
+}
+main .container_image .texte .fa-regular {
+  display: flex;
+  font-size: 30px;
+  color: black;
+}
+main .container_image .texte:hover .fa-regular {
+  display: none;
+}
+main .container_image .texte:hover .fa-solid {
+  display: flex;
+  font-size: 30px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+main .container_image .texte h1 {
+  font-family: "Shrikhand", cursive;
+  margin: 15px 0 10px 0;
+}
+
+section .container_plats {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 0 20px;
+}
+section .container_plats h2 {
+  display: flex;
+  margin: 10px 0;
+  padding: 5px 0;
+  width: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+}
+section .container_plats a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 0 #e6e6e6;
+  padding: 10px;
+}
+section .container_plats a h3,
+section .container_plats a p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+section .container_plats a span {
+  display: flex;
+  font-weight: 500;
+}
+
+section .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 40px 20px 20px 20px;
+}
+section .btn .btn_commande {
+  text-align: center;
+  color: white;
+  background-color: #9356DC;
+  margin-bottom: 40px;
+  width: 220px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 5px 5px 0 #cdcdcd;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: whitesmoke;
+}
+section .btn .btn_commande:hover {
+  transform: scale(1.02);
+  background-image: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 0 5px 5px 0 #9a9a9a;
 }
 
 /*# sourceMappingURL=style.css.map */

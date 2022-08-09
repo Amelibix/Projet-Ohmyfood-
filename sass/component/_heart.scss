@@ -1,35 +1,30 @@
 @mixin heart {
-    .heart {
-        .fa-solid {
+
+    display: flex;
+
+    .fa-solid {
+        display: none;
+    }
+
+    .fa-regular {
+        display: flex;
+        font-size: 30px;
+        color: black;
+    }
+
+    &:hover {
+        .fa-regular {
             display: none;
         }
 
-        .fa-regular {
+        .fa-solid {
             display: flex;
             font-size: 30px;
-            position: absolute;
-            right: 16px;
-            top: 80%;
-            color: black;
-        }
-
-        &:hover {
-            .fa-regular {
-                color: transparent;
-            }
-
-            .fa-solid {
-                display: flex;
-                font-size: 30px;
-                position: absolute;
-                right: 16px;
-                top: 80%;
-                background: linear-gradient($primarycolor, $secondarycolor);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                cursor: pointer;
-            }
+            background: linear-gradient($primarycolor, $secondarycolor);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
         }
     }
 }

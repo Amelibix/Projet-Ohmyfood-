@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    background-color: $tertiary;
+    background-color: $tertiarycolor;
     inset: 0;
     animation: disappear 200ms $animation forwards;
 
@@ -184,7 +184,14 @@ section {
             margin: 10px;
             box-shadow: 0 5px 5px 0 lighten($color-grey, 40%);
             position: relative;
-            @include heart;
+
+            .heart {
+                @include heart;
+                position: absolute;
+                top: 80%;
+                left: 85%
+            }
+
             @include new;
 
             & img {
