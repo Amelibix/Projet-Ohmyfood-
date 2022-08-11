@@ -1,7 +1,10 @@
 header {
     .logo {
         @include part_logo;
-        box-shadow: 0 2px 2px 0 lighten($color-grey, 30%);
         background-color: white;
+    }
+
+    .shadow {
+        box-shadow: 0 2px 2px 0 lighten($color-grey, 30%);
     }
 }

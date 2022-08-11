@@ -4,6 +4,7 @@
 
     .fa-solid {
         display: none;
+
     }
 
     .fa-regular {
@@ -21,10 +22,24 @@
             display: flex;
             font-size: 30px;
             background: linear-gradient($primarycolor, $secondarycolor);
+            background-repeat: no-repeat;
+            background-position: bottom;
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             cursor: pointer;
+            animation: 1s heart both;
+
+
+            @keyframes heart {
+                0% {
+                    background-size: 100% 0%;
+                }
+
+                100% {
+                    background-size: 100% 100%;
+                }
+            }
         }
     }
 }
