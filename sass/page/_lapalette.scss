@@ -46,6 +46,7 @@ section {
         @include background-grey;
         padding: 0 20px;
         @include animation;
+        @include menus4;
 
         h2 {
             display: flex;
@@ -151,6 +152,7 @@ section {
                 text-overflow: ellipsis;
             }
         }
+
     }
 }
 

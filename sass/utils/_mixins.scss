@@ -73,3 +73,19 @@
         }
     }
 }
+
+@mixin menus4 {
+    .menus4 {
+        display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+            margin: 15px 10px 5px 10px;
+        }
+
+        p {
+            margin: 5px 10px 15px 10px;
+        }
+
+    }
+}
