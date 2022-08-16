@@ -1,51 +1,57 @@
-/*.loading {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: $tertiarycolor;
-    inset: 0;
-    animation: disappear 200ms $animation forwards;
+body {
+    background-color: lighten($color-grey, 40%);
+    @include police-texte;
 
-    .loader {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        display: block;
-        margin: 15px auto;
-        position: relative;
-        background: #FFF;
-        box-shadow: -24px 0 #FFF, 24px 0 #FFF;
-        box-sizing: border-box;
-        animation: shadowPulse $animation linear infinite;
-    }
+    #loading {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: $tertiarycolor;
+        inset: 0;
+        z-index: 2;
+        animation: disappear 200ms $animation forwards;
 
-    @keyframes disappear {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(0);
-        }
-    }
-
-    @keyframes shadowPulse {
-        33% {
+        #loader {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: block;
+            margin: 15px auto;
+            position: relative;
             background: #FFF;
-            box-shadow: -24px 0 $primarycolor, 24px 0 #FFF;
-        }
-
-        66% {
-            background: $secondarycolor;
             box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+            box-sizing: border-box;
+            animation: shadowPulse $animation linear infinite;
         }
 
-        100% {
-            background: #FFF;
-            box-shadow: -24px 0 #FFF, 24px 0 $primarycolor;
+        @keyframes disappear {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes shadowPulse {
+            33% {
+                background: #FFF;
+                box-shadow: -24px 0 $primarycolor, 24px 0 #FFF;
+            }
+
+            66% {
+                background: $secondarycolor;
+                box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+            }
+
+            100% {
+                background: #FFF;
+                box-shadow: -24px 0 #FFF, 24px 0 $primarycolor;
+            }
         }
     }
-}*/
+}
 
 main {
     .part_localisation {
@@ -69,10 +75,7 @@ main {
     }
 }
 
-body {
-    background-color: lighten($color-grey, 40%);
-    @include police-texte;
-}
+
 
 section {
     .container_reservez {
@@ -100,6 +103,7 @@ section {
         flex-direction: column;
         background-color: white;
         padding: 15px;
+        z-index: 1;
         counter-reset: number;
 
         & ol {
@@ -169,6 +173,7 @@ section {
         flex-direction: column;
         @include background-grey;
         padding: 10px 10px 50px;
+        z-index: 1;
 
         h2 {
             margin-left: 10px;

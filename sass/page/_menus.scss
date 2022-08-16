@@ -153,6 +153,20 @@ section {
             }
         }
 
+
+
+
+    }
+
+    @media (min-width :960px) {
+        @include background-grey;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .cards {
+            width: 330px
+        }
     }
 }
 
