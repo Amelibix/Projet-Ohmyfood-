@@ -524,14 +524,14 @@ section .container_plats .menus p {
   text-overflow: ellipsis;
 }
 @media (min-width: 960px) {
-  section {
-    background-color: whitesmoke;
+  section .container_menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
   }
-  section .cards {
-    width: 330px;
+  section .container_menu .cards {
+    width: 350px;
   }
 }
 

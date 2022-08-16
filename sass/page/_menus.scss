@@ -152,20 +152,18 @@ section {
                 text-overflow: ellipsis;
             }
         }
-
-
-
-
     }
 
     @media (min-width :960px) {
-        @include background-grey;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        .container_menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @include background-grey;
 
-        .cards {
-            width: 330px
+            .cards {
+                width: 350px;
+            }
         }
     }
 }
