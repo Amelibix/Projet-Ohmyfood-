@@ -107,7 +107,7 @@ main .part_localisation {
   color: #333333;
   font-weight: bolder;
   font-size: 13px;
-  padding: 10px;
+  padding: 10px 10px 10px 60px;
 }
 main .part_localisation .fa-location-dot {
   margin-right: 10px;
@@ -425,13 +425,14 @@ section .container_plats .animation3 {
     opacity: 0;
   }
   100% {
-    transform: scaleY(100%);
+    transform: scaleY(1);
     opacity: 1;
   }
 }
 section .container_plats .menus4 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 section .container_plats .menus4 h3 {
   margin: 15px 10px 5px 10px;
