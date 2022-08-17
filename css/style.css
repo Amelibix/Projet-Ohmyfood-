@@ -424,17 +424,6 @@ section .container_plats .animation3 {
     opacity: 1;
   }
 }
-section .container_plats .menus4 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-section .container_plats .menus4 h3 {
-  margin: 15px 10px 5px 10px;
-}
-section .container_plats .menus4 p {
-  margin: 5px 10px 15px 10px;
-}
 section .container_plats h2 {
   display: flex;
   margin: 10px 0;
