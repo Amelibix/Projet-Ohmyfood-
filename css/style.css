@@ -465,11 +465,11 @@ section .container_plats .cards:hover .check {
   transform-origin: right 50%;
 }
 @keyframes check_appear {
-  100% {
-    transform: scaleX(1);
-  }
   0% {
     transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 section .container_plats .cards:hover span {
