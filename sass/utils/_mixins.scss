@@ -49,6 +49,7 @@
     .animation1 {
 
         animation: 1s appear both;
+
     }
 
     .animation2 {
@@ -64,11 +65,23 @@
     @keyframes appear {
         0% {
             transform: scaleY(0);
+            transform-origin: top;
             opacity: 0;
+        }
+
+        30% {
+            transform-origin: top;
+            opacity: 0.3;
+        }
+
+        60% {
+            transform-origin: top;
+            opacity: 0.6;
         }
 
         100% {
             transform: scaleY(1);
+            transform-origin: top;
             opacity: 1;
         }
     }
